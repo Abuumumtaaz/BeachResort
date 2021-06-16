@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import defaultBcg from '../images/room-1.jpeg';
-import Hero from '../components/Hero';
+//import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import {RoomContext} from '../Context';
@@ -40,7 +40,7 @@ export default class SingleRooms extends Component {
         pets, 
         images
      } = room;
-     const [mainImg, ...defaultImg] = images;
+     const [ ...defaultImg] = images;
         return (
             <>
             <StyledHero img={images[0] || this.state.defaultBcg}>
